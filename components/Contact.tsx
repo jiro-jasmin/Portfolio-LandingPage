@@ -61,7 +61,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         <a
                             href="tel:+33625606928"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             title="Telephone"
                             aria-label="Telephone"
                             tabIndex={0} >
@@ -70,7 +70,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         <a
                             href="tel:+33625606928"
                             target="_blank"
-                            rel="noopener" >
+                            rel="noopener noreferrer" >
                             +33 625 606 928
                         </a>
 
@@ -79,7 +79,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         <a
                             href="mailto:florianj.giraud@gmail.com"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             title="Email"
                             aria-label="Email"
                             tabIndex={0} >
@@ -88,7 +88,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         <a
                             href="mailto:florianj.giraud@gmail.com"
                             target="_blank"
-                            rel="noopener" >
+                            rel="noopener noreferrer" >
                             florianj.giraud@gmail.com
                         </a>
 
@@ -97,7 +97,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         <a
                             href="https://www.linkedin.com/in/jiro-jasmin/"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             title="LinkedIn"
                             aria-label="LinkedIn profile"
                             tabIndex={0} >
@@ -106,7 +106,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         <a
                             href="https://www.linkedin.com/in/jiro-jasmin/"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             aria-label="LinkedIn profile" >
                             Florian J. Giraud
                             <p className="text-sm">{linkedin[language as keyof SectionContent]}</p>

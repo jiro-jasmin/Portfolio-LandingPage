@@ -133,7 +133,7 @@ const About: React.FC<AboutProps> = ({ language }) => {
                                 <a
                                     href="https://www.linkedin.com/in/jiro-jasmin/"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="noopener noreferrer"
                                     title="LinkedIn"
                                     aria-label="LinkedIn profile"
                                     tabIndex={0} >
@@ -142,7 +142,7 @@ const About: React.FC<AboutProps> = ({ language }) => {
                                 <a
                                     href="https://github.com/jiro-jasmin"
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="noopener noreferrer"
                                     aria-label="GitHub profile"
                                     title="Github"
                                     tabIndex={0} >
