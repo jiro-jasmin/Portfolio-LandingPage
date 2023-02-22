@@ -119,7 +119,7 @@ const NavBar: React.FC<NavBarProps> = ({ defaultLanguage, onLanguageChange }) =>
                 </ul>
             </div>
             <div className="fixed left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 md:mr-4 md:relative z-50">
-                <a href="mailto:florianj.giraud@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a href="mailto:florianj.giraud@gmail.com" target="_blank" rel="noopener">
                     <Button style={'primary'} content={btnContact[defaultLanguage as keyof TitleContent]} small={true} />
                 </a>
             </div>

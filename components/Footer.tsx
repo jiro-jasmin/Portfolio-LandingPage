@@ -47,6 +47,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                 <a
                     href="mailto:florianj.giraud@gmail.com"
                     target="_blank"
+                    rel="noopener"
                     title="Email"
                     aria-label="Email"
                     tabIndex={0} >
@@ -55,6 +56,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                 <a
                     href="tel:+33625606928"
                     target="_blank"
+                    rel="noopener"
                     title="Telephone"
                     aria-label="Telephone"
                     tabIndex={0} >
@@ -63,6 +65,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                 <a
                     href="https://www.linkedin.com/in/jiro-jasmin/"
                     target="_blank"
+                    rel="noopener"
                     title="LinkedIn"
                     aria-label="LinkedIn profile"
                     tabIndex={0} >
@@ -71,6 +74,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
                 <a
                     href="https://github.com/jiro-jasmin"
                     target="_blank"
+                    rel="noopener"
                     aria-label="GitHub profile"
                     title="Github"
                     tabIndex={0} >

@@ -66,6 +66,7 @@ const Resume: React.FC<ResumeProps> = ({ language }) => {
                         <Link
                             href={item.docpath}
                             target="_blank"
+                            rel="noopener"
                             download
                             aria-label="Download Resume"
                             className="
