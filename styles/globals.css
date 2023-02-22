@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Format";
+  src: url("../public/fonts/Format_1452.woff"), url("../public/fonts/Format_1452.eot");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../public/fonts/OpenSans-Regular.ttf");
+}
+
+@layer base {
+  html {
+    font-family: "Open Sans", ui-sans-serif, sans-serif, system-ui, "Segoe UI", Roboto;
+  }
+}
+
+@layer components {
+
+  /* Navbar */
+
+  .burger {
+    @apply cursor-pointer p-5 transition-all z-20;
+  }
+
+  .open .burger__top-bun {
+    @apply translate-y-0 rotate-45;
+  }
+
+  .open .burger__bottom-bun {
+    @apply translate-y-0 -rotate-45;
+  }
+
+  /* Custom background gradients */
+
+  .bg-disk {
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(from 180deg at 50% 50%, #C78CF7 0deg, rgba(207, 173, 234, 0.567708) 48.75deg, #F793C0 103.13deg, #79A4FF 281.25deg, #8F8CF7 360deg);
+    transform: rotate(-180deg);
+    border-radius: 100%;
+  }
+
+  .bg-skills {
+    background: linear-gradient(258.78deg, #E5BCCF 23.97%, #F793C0 49.71%, #C78CF7 86.13%, #A66DD5 100%);
+  }
+
+  /* This change of direction should only works on button secondary */
+  .btn-hover {
+    background: linear-gradient(310deg, #E5BCCF 23.97%, #F793C0 49.71%, #C78CF7 86.13%, #A66DD5 100%);
+  }
+
+  .bg-about {
+    background: radial-gradient(48.62% 69.41% at 73.82% 65.58%, rgba(247, 147, 192, 0.9) 0%, rgba(143, 140, 247, 0.78) 30.73%, rgba(199, 140, 247, 0.3) 69.79%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .bg-resume {
+    background: linear-gradient(270deg, #8F8CF7 21.09%, #79A4FF 50%);
+  }
+
+  .bg-contact {
+    background: linear-gradient(214.46deg, rgba(87, 83, 242, 0.78) 3.67%, rgba(226, 103, 158, 0.9) 84.57%);
+  }
+
+  /* Modal */
+
+  .modal-open {
+    @apply overflow-hidden;
+  }
+
+  .modal-open::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 40;
+  }
+
+}
