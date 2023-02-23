@@ -10,6 +10,7 @@ interface ProjectProps {
 
 type Card = {
     title: string,
+    features: string,
     imagepath: string,
     videopath?: string,
     description: { 
@@ -30,7 +31,7 @@ const Project: React.FC<ProjectProps> = ({ item, handleClick, language }) => {
                     hover:brightness-105 hover:shadow-[#b0aee2] hover:shadow-2xl hover:scale-105 transition-all duration-300 ease-in-out"
             onClick={() => handleClick(item)}>
             <div className="w-full h-3/5 bg-white rounded-t-xl overflow-hidden relative">
-                <Image src={item.imagepath} alt="app preview" fill sizes="360px" className="object-cover" />
+                <Image src={`/projects/${item.imagepath}`} alt="app preview" fill sizes="360px" className="object-cover" />
             </div>
             <div className="m-6">
                 <h3 className="font-title text-xl">{item.title}</h3>

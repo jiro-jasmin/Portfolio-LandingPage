@@ -17,9 +17,10 @@ interface TitleContent {
 
 type Card = {
     title: string,
+    features: string,
     imagepath: string,
     videopath?: string,
-    description: { 
+    description: {
         jp: string,
         en: string
     },
@@ -65,52 +66,61 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
 
 
     const projectsContent: Card[] = [
-            {
-                title: "premier projet",
-                imagepath: "/preview.png",
-                description: {
-                    en: "ecommerce",
-                    jp: "ECサイト"
-                },
-                tags: ["javascript", "php"],
-                github: "/",
-                livedemo: "/"
+        {
+            title: "Fabiola Amaudric du Chaffaut",
+            imagepath: "fabiola.png",
+            description: {
+                en: "Visual artist's portfolio",
+                jp: "現代アーティストのポートフォリオ"
             },
-                        {
-                title: "premier projet",
-                imagepath: "/preview.png",
-                videopath: "j5-WIgR2ifk",
-                description: {
-                    en: "ecommerce",
-                    jp: "ECサイト"
-                },
-                tags: ["javascript", "php"],
-                github: "/",
+            tags: ["javascript", "php"],
+            github: "https://github.com/jiro-jasmin/Artist-s-portfolio",
+            livedemo: "https://fabiolaamaudricduchaffaut.fr/",
+            features: `🚀 Native PHP, JavaScript and CSS
+                🚀 Dynamic pages with French/English toggler
+                🚀 Customable and responsive animation on homepage, and responsive animation on scroll for the works' menu
+                🚀 Custom admin panel made with Kirby CMS
+                🚀 Manageable SEO with Kirby Meta plugin`
+        },
+        {
+            title: "premier projet",
+            imagepath: "preview.png",
+            videopath: "j5-WIgR2ifk",
+            description: {
+                en: "ecommerce",
+                jp: "ECサイト"
             },
-                        {
-                title: "premier projet",
-                imagepath: "/preview.png",
-                videopath: "j5-WIgR2ifk",
-                description: {
-                    en: "ecommerce",
-                    jp: "ECサイト"
-                },
-                tags: ["javascript", "php"],
-                github: "/",
-                livedemo: "/"
+            tags: ["javascript", "php"],
+            github: "/",
+            features: `- Native PHP, JavaScript and CSS`
+
+        },
+        {
+            title: "premier projet",
+            imagepath: "preview.png",
+            videopath: "j5-WIgR2ifk",
+            description: {
+                en: "ecommerce",
+                jp: "ECサイト"
             },
-                        {
-                title: "premier projet",
-                imagepath: "/preview.png",
-                videopath: "j5-WIgR2ifk",
-                description: {
-                    en: "ecommerce",
-                    jp: "ECサイト"
-                },
-                tags: ["javascript", "php"],
-                github: "/"
+            tags: ["javascript", "php"],
+            github: "/",
+            livedemo: "/",
+            features: `- Native PHP, JavaScript and CSS`
+        },
+        {
+            title: "premier projet",
+            imagepath: "preview.png",
+            videopath: "j5-WIgR2ifk",
+            description: {
+                en: "ecommerce",
+                jp: "ECサイト"
             },
-        ];
+            tags: ["javascript", "php"],
+            github: "/",
+            features: `- Native PHP, JavaScript and CSS`
+        },
+    ];
 
     const btnMore: TitleContent = {
         jp: 'もっと見る',
@@ -171,7 +181,10 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                         )}
                         </div>
                         <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start">
-                            <div className="md:w-3/4 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi, voluptatum enim aliquid unde tempore expedita ab optio sapiente! Sequi magni veniam nobis quo deserunt debitis quidem nisi, itaque deleniti.</div>
+                            <div className="md:w-3/4 mb-2 whitespace-pre-line">
+                                <h4 className="text-lg font-bold mb-2">Features</h4>
+                                {selectedItem.features}
+                            </div>
                             <div className="w-full h-80 md:w-[550px] md:h-[270px] rounded-xl overflow-hidden relative m-2">
                                 {selectedItem.videopath !== undefined ?
                                     <iframe
@@ -181,15 +194,20 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                                         allowFullScreen>
                                     </iframe>
                                     :
-                                    <Image src={selectedItem.imagepath} alt="app preview" fill className="object-cover" />
+                                    selectedItem.livedemo !== undefined ?
+                                        <a href={selectedItem.livedemo} target="_blank" rel="noopener noreferrer" title="Visit live demo" aria-label="app live demo">
+                                            <Image src={`/projects/${selectedItem.imagepath}`} alt="app preview" fill sizes="550px" className="object-cover" />
+                                        </a>
+                                        :
+                                        <Image src={`/projects/${selectedItem.imagepath}`} alt="app preview" fill sizes="550px" className="object-cover" />
                                 }
                             </div>
                         </div>
 
                         <div className="flex flex-col md:flex-row md:justify-start items-center px-10 sm:px-0 w-full sm:w-auto">
                             <a href={selectedItem.github} target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2 md:ml-0"><Button style={'secondary'} content={'Github'} /></a>
-                            {selectedItem.livedemo && 
-                            <a href={selectedItem.livedemo} target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Live Demo'} /></a>
+                            {selectedItem.livedemo &&
+                                <a href={selectedItem.livedemo} target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Live Demo'} /></a>
                             }
                         </div>
                     </div>
