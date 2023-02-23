@@ -73,7 +73,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 alt="Picture of me"
                 width={550}
                 height={550}
-                className="px-2 sm:absolute sm:top-28 sm:z-[-1] md:top-12"
+                className="px-2 sm:absolute sm:z-[-1] sm:-bottom-0"
             />
 
             <div className="px-10 w-full mb-4 sm:flex sm:justify-center sm:absolute sm:top-[480px] md:static md:w-auto md:self-start md:px-6 md:order-last">

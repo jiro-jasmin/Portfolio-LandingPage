@@ -47,8 +47,8 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                     {title[language as keyof SectionContent]}
                 </h2>
             </div>
-            <div className="flex justify-center items-center flex-col md:h-[70vh] mx-3 my-5 sm:mx-8 pb-12">
-                <div>
+            <div className="flex justify-center flex-col md:flex-row md:gap-6 items-center md:items-end md:h-[60vh] mx-3 mt-5 sm:mx-8 pb-12">
+                <div className="md:w-80 md:mb-7">
                     <h3 className="text-xl my-4">
                         {title2[language as keyof SectionContent]}
                     </h3>
@@ -56,7 +56,7 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
                         {message[language as keyof SectionContent]}
                     </div>
                 </div>
-                <div className="flex flex-col items-start my-4">
+                <div className="flex flex-col items-start my-4 md:w-80">
                     <div className="flex items-center gap-8 m-3">
                         <a
                             href="tel:+33625606928"

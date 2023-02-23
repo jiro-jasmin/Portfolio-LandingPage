@@ -153,7 +153,7 @@ const About: React.FC<AboutProps> = ({ language }) => {
 
                         </>
                     }
-                    <div className="mt-4 px-10 w-full sm:w-auto">
+                    <div className="mt-4 px-10 md:px-0 w-full sm:w-auto">
                         <Button style={'secondary'} click={handleViewAllClick} content={!viewAll ? btnMore[language as keyof SectionContent] : btnLess[language as keyof SectionContent]} />
                     </div>
                 </div>

@@ -35,13 +35,13 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>jiro jasmin | React & NextJS Front-End Web Developer </title>
+        <title>jiro jasmin | React & NextJS Front-End Web Developer</title>
         <meta name="description" content="I am a French React & NextJS Front-End Web Developer available to work. I am fluent in English, Japanese and French." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="fixed w-full bg-transparent hover:bg-white hover:shadow-md transition-all duration-500 ease-in-out z-40">
+      <header className="fixed w-full bg-transparent bg-white/25 hover:bg-white hover:shadow-md transition-all duration-500 ease-in-out z-40">
         <NavBar defaultLanguage={language} onLanguageChange={handleLanguageChange} />
       </header>
 
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
         <Contact language={language} />
       </main>
 
-      <footer className="py-1 px-4">
+      <footer className="py-1 px-4 bg-slate-50">
         <Footer language={language} />
       </footer>
     </>
