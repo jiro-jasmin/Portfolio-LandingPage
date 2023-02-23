@@ -16,7 +16,9 @@ type Card = {
         jp: string,
         en: string
     },
-    tags: string[]
+    tags: string[],
+    github: string,
+    livedemo?: string
 }
 
 

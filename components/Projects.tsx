@@ -23,7 +23,9 @@ type Card = {
         jp: string,
         en: string
     },
-    tags: string[]
+    tags: string[],
+    github: string,
+    livedemo?: string
 }
 
 const Projects: React.FC<ProjectsProps> = ({ language }) => {
@@ -66,14 +68,15 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
             {
                 title: "premier projet",
                 imagepath: "/preview.png",
-                videopath: "j5-WIgR2ifk",
                 description: {
                     en: "ecommerce",
                     jp: "ECサイト"
                 },
-                tags: ["javascript", "php"]
+                tags: ["javascript", "php"],
+                github: "/",
+                livedemo: "/"
             },
-            {
+                        {
                 title: "premier projet",
                 imagepath: "/preview.png",
                 videopath: "j5-WIgR2ifk",
@@ -81,9 +84,10 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                     en: "ecommerce",
                     jp: "ECサイト"
                 },
-                tags: ["javascript", "php"]
+                tags: ["javascript", "php"],
+                github: "/",
             },
-            {
+                        {
                 title: "premier projet",
                 imagepath: "/preview.png",
                 videopath: "j5-WIgR2ifk",
@@ -91,9 +95,11 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                     en: "ecommerce",
                     jp: "ECサイト"
                 },
-                tags: ["javascript", "php"]
+                tags: ["javascript", "php"],
+                github: "/",
+                livedemo: "/"
             },
-            {
+                        {
                 title: "premier projet",
                 imagepath: "/preview.png",
                 videopath: "j5-WIgR2ifk",
@@ -101,19 +107,9 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                     en: "ecommerce",
                     jp: "ECサイト"
                 },
-                tags: ["javascript", "php"]
+                tags: ["javascript", "php"],
+                github: "/"
             },
-            {
-                title: "premier projet",
-                imagepath: "/preview.png",
-                videopath: "j5-WIgR2ifk",
-                description: {
-                    en: "ecommerce",
-                    jp: "ECサイト"
-                },
-                tags: ["javascript", "php"]
-            },
-
         ];
 
     const btnMore: TitleContent = {
@@ -191,8 +187,10 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                         </div>
 
                         <div className="flex flex-col md:flex-row md:justify-start items-center px-10 sm:px-0 w-full sm:w-auto">
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2 ml-0"><Button style={'secondary'} content={'Github'} /></a>
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Live Demo'} /></a>
+                            <a href={selectedItem.github} target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2 md:ml-0"><Button style={'secondary'} content={'Github'} /></a>
+                            {selectedItem.livedemo && 
+                            <a href={selectedItem.livedemo} target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Live Demo'} /></a>
+                            }
                         </div>
                     </div>
                 </div>
