@@ -77,13 +77,13 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 className="px-2 sm:absolute sm:z-[-1] sm:-bottom-0 sm:px-12 md:px-0"
             />
 
-            <div className="px-10 w-full mb-4 sm:flex sm:justify-center sm:absolute sm:top-[480px] md:static md:w-auto md:self-start md:px-6 md:order-last">
+            <div className="px-10 w-full mb-4 sm:flex sm:justify-center sm:absolute sm:top-[480px] md:static md:w-auto md:self-start md:px-4 md:order-last">
                 <a href="mailto:florianj.giraud@gmail.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                     <Button style={'primary'} content={btn[language as keyof SectionContent]} />
                 </a>
             </div>
 
-            <div className="text-center md:flex md:w-full md:px-6 md:justify-between">
+            <div className="text-center md:flex md:w-full md:px-4 md:justify-between">
                 <ul className="text-lg sm:absolute sm:right-4 sm:top-24 sm:text-right md:static md:text-left ">{description[language as keyof ListContent].map((item, index) =>
                     <li key={item + index}>{item}</li>
                 )}
