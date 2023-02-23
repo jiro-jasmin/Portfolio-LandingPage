@@ -48,8 +48,16 @@
     background: linear-gradient(258.78deg, #E5BCCF 23.97%, #F793C0 49.71%, #C78CF7 86.13%, #A66DD5 100%);
   }
 
+  .bg-primary {
+    background: linear-gradient(270deg, #8F8CF7 21.09%, #79A4FF 50%);
+  }
+
+  .bg-primary-hover {
+    background: linear-gradient(200deg, #8F8CF7 21.09%, #79A4FF 50%);
+  }
+
   /* This change of direction should only works on button secondary */
-  .btn-hover {
+  .bg-secondary-hover {
     background: linear-gradient(310deg, #E5BCCF 23.97%, #F793C0 49.71%, #C78CF7 86.13%, #A66DD5 100%);
   }
 

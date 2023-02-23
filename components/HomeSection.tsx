@@ -40,11 +40,12 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
 
     const catchPhrase: SectionContent = {
         jp: `🌏 人間の言語からプログラミング言語へ 💻
-        多様なオーディエンスにリーチする、
-        あなたへのモダンでインパクトのある
+        国境を超えてユーザーを獲得するために、
+        あなたのインパクトのある
         ウェブアプリを制作します！`,
-        en: `🌏 From human language to programming language 💻
-        I will create your next modern and impactful web app to reach a diverse audience!`
+        en: `🌏 From human language 
+        to programming language 💻
+        I will create your next impactful web app to engage users across borders!`
     };
 
     const btn: SectionContent = {
@@ -73,7 +74,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 alt="Picture of me"
                 width={550}
                 height={550}
-                className="px-2 sm:absolute sm:z-[-1] sm:-bottom-0"
+                className="px-2 sm:absolute sm:z-[-1] sm:-bottom-0 sm:px-12 md:px-0"
             />
 
             <div className="px-10 w-full mb-4 sm:flex sm:justify-center sm:absolute sm:top-[480px] md:static md:w-auto md:self-start md:px-6 md:order-last">
@@ -89,7 +90,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 </ul>
 
                 <div className={`md:text-right whitespace-pre-line m-3 
-                sm:absolute ${language === "en" ? " sm:top-[400px]" : "sm:top-[360px]" } sm:left-1/2 sm:-translate-x-1/2 sm:w-full 
+                sm:absolute ${language === "en" ? " sm:top-[380px]" : "sm:top-[360px]" } sm:left-1/2 sm:-translate-x-1/2 sm:w-full 
                 md:static md:translate-x-0 md:m-0 md:max-w-[350px]`}>
                     {catchPhrase[language as keyof SectionContent]}
                 </div>

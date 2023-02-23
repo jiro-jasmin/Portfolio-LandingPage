@@ -15,16 +15,14 @@ interface TitleContent {
     en: string;
 }
 
-interface SectionContent {
-    jp: Card[],
-    en: Card[]
-}
-
 type Card = {
     title: string,
     imagepath: string,
     videopath?: string,
-    description: string,
+    description: { 
+        jp: string,
+        en: string
+    },
     tags: string[]
 }
 
@@ -64,92 +62,59 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
     };
 
 
-    const projectsContent: SectionContent = {
-        jp: [
+    const projectsContent: Card[] = [
             {
                 title: "premier projet",
                 imagepath: "/preview.png",
                 videopath: "j5-WIgR2ifk",
-                description: "cv en fr",
-                tags: ["javascript", "php"]
-
-            },
-            {
-                title: "deuxieme projet",
-                imagepath: "/preview.png",
-                description: "cv en en",
-                tags: ["css", "php"]
-
-            },
-            {
-                title: "troisieme projet",
-                imagepath: "/preview.png",
-                description: "cv en jp",
-                tags: ["javascript", "jquery"]
-
-            },
-            {
-                title: "quatrieme projet",
-                imagepath: "/",
-                description: "cv en jp",
+                description: {
+                    en: "ecommerce",
+                    jp: "ECサイト"
+                },
                 tags: ["javascript", "php"]
             },
             {
                 title: "premier projet",
                 imagepath: "/preview.png",
-                description: "cv en fr",
+                videopath: "j5-WIgR2ifk",
+                description: {
+                    en: "ecommerce",
+                    jp: "ECサイト"
+                },
                 tags: ["javascript", "php"]
+            },
+            {
+                title: "premier projet",
+                imagepath: "/preview.png",
+                videopath: "j5-WIgR2ifk",
+                description: {
+                    en: "ecommerce",
+                    jp: "ECサイト"
+                },
+                tags: ["javascript", "php"]
+            },
+            {
+                title: "premier projet",
+                imagepath: "/preview.png",
+                videopath: "j5-WIgR2ifk",
+                description: {
+                    en: "ecommerce",
+                    jp: "ECサイト"
+                },
+                tags: ["javascript", "php"]
+            },
+            {
+                title: "premier projet",
+                imagepath: "/preview.png",
+                videopath: "j5-WIgR2ifk",
+                description: {
+                    en: "ecommerce",
+                    jp: "ECサイト"
+                },
+                tags: ["javascript", "php"]
+            },
 
-            },
-            {
-                title: "deuxieme projet",
-                imagepath: "/preview.png",
-                description: "cv en en",
-                tags: ["css", "php"]
-
-            },
-            {
-                title: "troisieme projet",
-                imagepath: "/preview.png",
-                description: "cv en jp",
-                tags: ["javascript", "jquery"]
-
-            },
-            {
-                title: "quatrieme projet",
-                imagepath: "/",
-                description: "cv en jp",
-                tags: ["javascript", "php"]
-            },
-
-        ],
-        en: [
-            {
-                title: "first project",
-                imagepath: "/preview.png",
-                description: "cv en fr",
-                tags: ["javascript", "php"]
-            },
-            {
-                title: "second project",
-                imagepath: "/preview.png",
-                description: "cv en en",
-                tags: ["javascript", "php"]
-            },
-            {
-                title: "third project",
-                imagepath: "/preview.png",
-                description: "cv en jp",
-                tags: ["jquery", "php"]
-            },
-            {
-                title: "fourth project",
-                imagepath: "/",
-                description: "cv en jp",
-                tags: ["javascript", "php"]
-            },
-        ]
-    };
+        ];
 
     const btnMore: TitleContent = {
         jp: 'もっと見る',
@@ -171,12 +136,12 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                 </h2>
             </div>
             <ul className="flex flex-wrap place-content-around place-items-center px-1 sm:px-0">
-                {projectsContent[language as keyof SectionContent].slice(0, 3).map((item: Card, index: number) =>
-                    <Project item={item} handleClick={handleItemClick} key={item.title + index} />
+                {projectsContent.slice(0, 3).map((item: Card, index: number) =>
+                    <Project language={language} item={item} handleClick={handleItemClick} key={item.title + index} />
                 )}
                 {/* "View all items" start from item at index 3 */}
-                {viewAll && projectsContent[language as keyof SectionContent].slice(3).map((item: Card, index: number) =>
-                    <Project item={item} handleClick={handleItemClick} key={item.title + index} />
+                {viewAll && projectsContent.slice(3).map((item: Card, index: number) =>
+                    <Project language={language} item={item} handleClick={handleItemClick} key={item.title + index} />
                 )}
             </ul>
             <div className="flex justify-center my-8 mx-16">
@@ -202,7 +167,7 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
 
                     <div className="flex flex-col items-center md:block">
                         <h3 className="font-title text-2xl">{selectedItem.title}</h3>
-                        <div className="text-slate-400">{selectedItem.description}</div>
+                        <div className="text-slate-400">{selectedItem.description[language]}</div>
                         <div className="my-4 flex justify-center md:block">{selectedItem.tags.map((tag, index: number) =>
                             <span className="py-0.5 px-6 mr-2 text-white text-sm bg-[#A66DD5] rounded-full" key={tag + index}>
                                 {tag}
@@ -225,7 +190,7 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                             </div>
                         </div>
 
-                        <div className="flex flex-col md:flex-row md:justify-center items-center px-10 sm:px-0 w-full sm:w-auto">
+                        <div className="flex flex-col md:flex-row md:justify-start items-center px-10 sm:px-0 w-full sm:w-auto">
                             <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Github'} /></a>
                             <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Live Demo'} /></a>
                         </div>

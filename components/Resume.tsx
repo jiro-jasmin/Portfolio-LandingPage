@@ -36,11 +36,11 @@ const Resume: React.FC<ResumeProps> = ({ language }) => {
         },
         {
             title: "履歴書 (Japanese)",
-            docpath: "/resume/pdf/ジロ・職務経歴書.pdf"
+            docpath: "/resume/pdf/ジロ・履歴書.pdf"
         },
         {
             title: "職務経歴書 (Japanese)",
-            docpath: "/resume/pdf/ジロ・履歴書.pdf"
+            docpath: "/resume/pdf/ジロ・職務経歴書.pdf"
         }
     ];
 

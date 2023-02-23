@@ -38,15 +38,14 @@ const About: React.FC<AboutProps> = ({ language }) => {
         現在フランス在住で、今後挑戦心を持って
         日本の国際的な企業でWebエンジニアとして就職したく存じます。
         大学での日本語の勉強と日本での職務経験があるため、
-        日本語、英語、または母語のフランス語で対応が可能です。
+        日本語、英語、そして母語のフランス語で対応が可能です。
         
         現在フリーランスでサイト制作の経験を積め、
-        今後Webデベロッパーのチームと働ける準備ができております。
+        今後Web開発者のチームと働ける準備ができております。
         
         何卒宜しくお願い致します。`,
-        en: `Hi 👋 I am a French junior web developer 
-        and I am looking for a front-end developer position 
-        in an international company!
+        en: `Hi 👋 I am Florian J. Giraud.
+        I am a French junior web developer currently looking for a front-end developer position in an international company!
         At the moment I am living in France but I am open to start working abroad 🌍 
         My background in Japanese studies and work experience in Japan has allowed me to be familiar with diverse teams using Japanese🇯🇵, English🇬🇧 and French🇫🇷 on a professional level. 
         I can quickly adapt to change and I love learning new things everyday!`,
@@ -121,7 +120,7 @@ const About: React.FC<AboutProps> = ({ language }) => {
 
                             <ul className="my-2">
                                 <li className="mb-1">🚀 CSS: Sass (SCSS), PostCSS, BEM naming, Bootstrap, Tailwind</li>
-                                <li className="mb-1">🚀 JAM Stack: React.js, Next.js, Strapi, TypeScript</li>
+                                <li className="mb-1">🚀 JAM stack: React.js, Next.js, Strapi, TypeScript</li>
                                 <li className="mb-1">🚀 LAMP/MAMP stack: JavaScript, Php, Symfony, Kirby, Wordpress, SQL, Merise methodology</li>
                                 <li className="mb-1">🚀 Tools: Webpack, Parcel, jQuery</li>
                                 <li className="mb-1">🚀 Design: Photoshop, Indesign, Balsamiq, Figma</li>

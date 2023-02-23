@@ -20,11 +20,11 @@ const Button: React.FC<ButtonProps> = ({ style, content, click, small }) => {
 
     const btnClass = (style: btnStyle): string => {
         if (style === "primary") {
-            return `font-sans px-8 py-2 rounded-full sm:rounded-lg bg-gradient-to-l from-[#8F8CF7] to-[#79A4FF] text-white 
-            hover:brightness-105 hover:bg-gradient-to-bl shadow-lg hover:shadow-[#79A4FF] hover:scale-105 transition-all duration-300 ease-in-out
+            return `font-sans px-8 py-2 rounded-full sm:rounded-lg bg-primary text-white 
+            hover:brightness-105 hover:bg-primary-hover shadow-lg hover:shadow-[#79A4FF] hover:scale-105 transition-all duration-300 ease-in-out
             w-full sm:w-auto ${small === true ? "text-base" : "text-lg sm:text-base"}`
         } else if (style === "secondary") {
-            return `${hovered ? 'btn-hover ' : 'bg-skills '}
+            return `${hovered ? 'bg-secondary-hover ' : 'bg-skills '}
             font-sans text-base px-8 py-2 rounded-full sm:rounded-lg text-white bg-skills
             hover:brightness-105 shadow-lg hover:shadow-[#E5BCCF] hover:scale-105 transition-all duration-300 ease-in-out
             w-full sm:w-auto text-lg sm:text-base`

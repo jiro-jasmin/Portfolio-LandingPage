@@ -1,19 +1,26 @@
 import Image from "next/image";
 
+type Language = 'jp' | 'en';
+
 interface ProjectProps {
     item: Card,
-    handleClick: (item: Card) => void
+    handleClick: (item: Card) => void,
+    language: Language
 }
 
 type Card = {
     title: string,
     imagepath: string,
-    description: string,
+    videopath?: string,
+    description: { 
+        jp: string,
+        en: string
+    },
     tags: string[]
 }
 
 
-const Project: React.FC<ProjectProps> = ({ item, handleClick }) => {
+const Project: React.FC<ProjectProps> = ({ item, handleClick, language }) => {
     return (
         <li
 
@@ -25,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({ item, handleClick }) => {
             </div>
             <div className="m-6">
                 <h3 className="font-title text-xl">{item.title}</h3>
-                <div className="text-slate-400">{item.description}</div>
+                <div className="text-slate-400">{item.description[language]}</div>
                 <div className="my-4">{item.tags.map((tag, index: number) =>
                     <span className="py-0.5 px-6 mr-2 text-white text-sm bg-[#A66DD5] rounded-full" key={tag + index}>
                         {tag}
