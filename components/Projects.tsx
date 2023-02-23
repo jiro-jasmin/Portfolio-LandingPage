@@ -191,7 +191,7 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
                         </div>
 
                         <div className="flex flex-col md:flex-row md:justify-start items-center px-10 sm:px-0 w-full sm:w-auto">
-                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Github'} /></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2 ml-0"><Button style={'secondary'} content={'Github'} /></a>
                             <a href="#" target="_blank" rel="noopener noreferrer" className="text-center w-full sm:w-auto m-2"><Button style={'secondary'} content={'Live Demo'} /></a>
                         </div>
                     </div>
