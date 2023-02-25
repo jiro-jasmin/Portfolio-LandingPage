@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="fixed w-full bg-transparent bg-white/25 hover:bg-white hover:shadow-md transition-all duration-500 ease-in-out z-40">
+      <header className="fixed w-full bg-transparent bg-white/50 hover:bg-white hover:shadow-md transition-all duration-500 ease-in-out z-40">
         <NavBar defaultLanguage={language} onLanguageChange={handleLanguageChange} />
       </header>
 

@@ -74,7 +74,8 @@ const Resume: React.FC<ResumeProps> = ({ language }) => {
                             hover:brightness-105 shadow-md hover:shadow-white hover:scale-105 transition-all duration-300 ease-in-out
                             flex justify-between items-center
                             ">
-                            <span>{item.title}</span> <Image src="/resume/download.png" alt="download" width={20} height={20} />
+                            <div>{item.title}</div> 
+                            <Image src="/resume/download.png" alt="download" width={20} height={20} />
                         </Link>
                     </li>
                 )}
