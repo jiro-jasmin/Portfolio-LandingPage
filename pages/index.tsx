@@ -36,13 +36,13 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>jiro jasmin | React & NextJS Front-End Web Developer</title>
-        <meta name="description" content="React & NextJS Front-End Web Developer eager to create your next modern and impactful web application. I am fluent in English, Japanese and French." />
+        <meta name="description" content="React & Next.JS Front-End Web Developer eager to create your next modern and impactful web application! I am fluent in English, Japanese and French." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* Twitter Card data */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="jiro jasmin | React & NextJS Front-End Web Developer" />
-        <meta name="twitter:description" content="React & NextJS Front-End Web Developer eager to create your next modern and impactful web application." />
+        <meta name="twitter:description" content="Front-End Web Developer eager to create your next modern and impactful web application!" />
         <meta name="twitter:image" content="https://res.cloudinary.com/dn8laud19/image/upload/c_scale,w_800/v1677356726/jiro-jasmin/seo-card_rlp8sv.jpg" />
 
         {/* Open Graph data */}
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.jiro-jasmin.com/" />
         <meta property="og:image" content="https://res.cloudinary.com/dn8laud19/image/upload/c_scale,w_800/v1677356726/jiro-jasmin/seo-card_rlp8sv.jpg" />
-        <meta property="og:description" content="React & NextJS Front-End Web Developer eager to create your next modern and impactful web application." />
+        <meta property="og:description" content="Front-End Web Developer eager to create your next modern and impactful web application!" />
         <meta property="og:site_name" content="jiro jasmin" />
 
         <meta name="google-site-verification" content="OVGrf3zR2lualuECLC8bUGUByVJ0NNAUh_L4HEajm4M" />
