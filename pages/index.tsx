@@ -39,6 +39,7 @@ const Home: NextPage = () => {
         <meta name="description" content="I am a French React & NextJS Front-End Web Developer available to work. I am fluent in English, Japanese and French." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="OVGrf3zR2lualuECLC8bUGUByVJ0NNAUh_L4HEajm4M" />
       </Head>
 
       <header className="fixed w-full bg-transparent bg-white/50 hover:bg-white hover:shadow-md transition-all duration-500 ease-in-out z-40">
