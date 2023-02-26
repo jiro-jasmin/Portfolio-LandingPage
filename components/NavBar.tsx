@@ -130,8 +130,8 @@ const NavBar: React.FC<NavBarProps> = ({ defaultLanguage, onLanguageChange }) =>
                     className={`${menuOpen ? "open " : ""}burger hover:text-sky-500 transition-all`}
                     title="Menu"
                 >
-                    <span className="burger__top-bun w-7 h-0.5 absolute bg-[#8696FA] rotate-0 transition-all duration-500 -translate-x-3 -translate-y-1.5"></span>
-                    <span className="burger__bottom-bun w-7 h-0.5 absolute bg-[#8696FA] rotate-0 transition-all duration-500 -translate-x-3 translate-y-0.5"></span>
+                    <span className="burger__top-bun w-7 h-0.5 absolute bg-[#8696FA] rotate-0 transition-all duration-500 -translate-x-2 -translate-y-1.5"></span>
+                    <span className="burger__bottom-bun w-7 h-0.5 absolute bg-[#8696FA] rotate-0 transition-all duration-500 -translate-x-2 translate-y-0.5"></span>
                 </button>
             </div>
         </nav>

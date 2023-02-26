@@ -105,8 +105,8 @@ const About: React.FC<AboutProps> = ({ language }) => {
                 </h2>
             </div>
             <div className={`${!viewAll ? "md:h-[86vh] " : ""} flex md:justify-around items-center flex-col md:flex-row`}>
-                <div className="md:max-w-sm lg:max-w-lg flex flex-col items-center md:items-start py-5 px-3">
-                    <div className="whitespace-pre-line">{aboutContent[language as keyof SectionContent]}</div>
+                <div className="md:max-w-sm lg:max-w-lg flex flex-col items-center md:items-start py-5 px-4">
+                    <div className="whitespace-pre-line text-justify sm:text-left">{aboutContent[language as keyof SectionContent]}</div>
                     {viewAll &&
                         <>
                             <h4 className="mt-4 text-xl font-title">Skills & Technologies</h4>

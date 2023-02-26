@@ -89,7 +89,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 )}
                 </ul>
 
-                <div className={`md:text-right whitespace-pre-line m-3 
+                <div className={`md:text-right whitespace-pre-line my-3 mx-4 
                 sm:absolute ${language === "en" ? " sm:top-[380px]" : "sm:top-[360px]" } sm:left-1/2 sm:-translate-x-1/2 sm:w-full 
                 md:static md:translate-x-0 md:m-0 md:max-w-[350px]`}>
                     {catchPhrase[language as keyof SectionContent]}

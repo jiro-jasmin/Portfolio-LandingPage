@@ -54,7 +54,7 @@ const Resume: React.FC<ResumeProps> = ({ language }) => {
                     {title[language as keyof TitleContent]}
                 </h2>
             </div>
-            <div className="mx-3 pt-5 pb-2 sm:text-center sm:my-8">
+            <div className="mx-4 pt-5 pb-2 sm:text-center sm:my-8">
                 {message[language as keyof TitleContent]}
             </div>
             <div className="flex justify-center sm:hidden mt-4">
