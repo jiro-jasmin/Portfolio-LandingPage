@@ -238,12 +238,13 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
             github: "https://github.com/jiro-jasmin/jiro-jasmin.github.io/tree/main/js_todolist",
             livedemo: "https://jiro-jasmin.github.io/js_todolist/",
             videopath: "b6n8kW0fXRo",
-            features: `🚀 Native php
-                🚀 .tsv table and .txt files for data
+            features: `🚀 Native Javascript
                 🚀 Bootstrap & a bit of CSS
-                🚀 Dynamic contact page displaying current opening state of the shop (based on the current French timestamp)
-                🚀 Form with GET method to calculate final price and create a custom pizza
-                🚀 Views count of the whole website displayed in the footer (create and upload a new file each day there is a new visitor)`
+                🚀 Data stored and manageable in Javascript object
+                🚀 DOM elements linked with Javascript object
+                🚀 Client-side form data validation
+                🚀 Data sort out
+                🚀 Display animation on click`
         },
         {
             title: "Progica",
