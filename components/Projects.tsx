@@ -145,6 +145,7 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
             },
             tags: ["TypeScript", "Next.js"],
             github: "https://github.com/jiro-jasmin/Portfolio-LandingPage",
+            videopath: "F_3nl1f5flE",
             features: `This project is the website you are currently visiting !  
               
                 🚀 TypeScript, React, Next.js

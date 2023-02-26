@@ -12,7 +12,7 @@ Special thanks to [Noelie Karoum](https://noeliekaroumportfolio.com/) who design
   
 Alternatively, click here to watch a video demo:  
   
-[![CLICK HERE FOR VIDEO DEMO](https://img.youtube.com/vi/pqqSpC_XyhI/0.jpg)](https://youtu.be/pqqSpC_XyhI)
+[![CLICK HERE FOR VIDEO DEMO](https://img.youtube.com/vi/F_3nl1f5flE/0.jpg)](https://youtu.be/F_3nl1f5flE)
   
 ---  
   
