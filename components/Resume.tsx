@@ -32,7 +32,7 @@ const Resume: React.FC<ResumeProps> = ({ language }) => {
     const resumeContent: Card[] = [
         {
             title: "Resume (English)",
-            docpath: "/resume/pdf/FlorianGiraud-Resume.pdf"
+            docpath: "/resume/pdf/FlorianJGiraud-Resume.pdf"
         },
         {
             title: "履歴書 (Japanese)",
