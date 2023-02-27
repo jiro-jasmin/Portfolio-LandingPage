@@ -41,8 +41,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
     const catchPhrase: SectionContent = {
         jp: `🌏 人間の言語からプログラミング言語へ 💻
         国境を超えてユーザーを獲得するために、
-        あなたのインパクトのある
-        ウェブアプリを制作します！`,
+        インパクトのあるウェブアプリを制作します！`,
         en: `🌏 From human language 
         to programming language 💻
         I will create your next impactful web app to engage users across borders!`
@@ -89,9 +88,9 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 )}
                 </ul>
 
-                <div className={`md:text-right whitespace-pre-line my-3 mx-4 
-                sm:absolute ${language === "en" ? " sm:top-[380px]" : "sm:top-[360px]" } sm:left-1/2 sm:-translate-x-1/2 sm:w-full 
-                md:static md:translate-x-0 md:m-0 md:max-w-[350px]`}>
+                <div className="md:text-right whitespace-pre-line my-3 mx-4 
+                sm:absolute sm:top-[380px] sm:left-1/2 sm:-translate-x-1/2 sm:w-full 
+                md:static md:translate-x-0 md:m-0 md:max-w-[350px]">
                     {catchPhrase[language as keyof SectionContent]}
                 </div>
             </div>

@@ -32,18 +32,16 @@ const About: React.FC<AboutProps> = ({ language }) => {
     };
 
     const aboutContent: SectionContent = {
-        jp: `ジロ・フロリアンと申します。
-        フランス人のフロントエンドエンジニアです。
-        
-        現在フランス在住で、今後挑戦心を持って
-        日本の国際的な企業でWebエンジニアとして就職したく存じます。
-        大学での日本語の勉強と日本での職務経験があるため、
-        日本語、英語、そして母語のフランス語で対応が可能です。
-        
-        現在フリーランスでサイト制作の経験を積め、
-        今後Web開発者のチームと働ける準備ができております。
-        
-        何卒宜しくお願い致します。`,
+        jp: `はじめまして。ジロ・フロリアンと申します。
+        フランス人のフロントエンドエンジニアでございます。
+        現在フランスに在住しており、
+        この先挑戦心を持ちながら日本の国際的な企業でWebエンジニアとして貢献させて頂きたく存じます。
+        大学での日本語の学習と、日本での職務経験があるため、
+        日本語、英語、そして母語であるフランス語での対応が可能です。    
+        それに加え、フリーランスでサイト制作の経験を積んでいたため、
+        今後Web開発者のチームと共に働かせていただく準備ができております。  
+        採用頂けた後には、精一杯努めて参りますので、
+        ご検討のほど何卒よろしくお願い申し上げます。`,
         en: `Hi 👋 I am Florian J. Giraud.
         I am a French junior web developer currently looking for a front-end developer position in an international company!
         At the moment I am living in France but I am open to start working abroad 🌍 
@@ -94,7 +92,7 @@ const About: React.FC<AboutProps> = ({ language }) => {
 
     return (
         <section id="about" className={`
-        ${!viewAll ? "md:h-screen " : ""} 
+        ${!viewAll ? "md:min-h-screen lg:h-screen" : ""} 
         w-screen snap-start bg-[url('/about/about-bg_sp.png')] sm:bg-[url('/about/about-bg.png')] 
         sm:bg-cover bg-contain bg-fixed bg-no-repeat bg-right sm:bg-top`}>
             <div className="flex justify-center">
