@@ -41,13 +41,13 @@ const Contact: React.FC<ContactProps> = ({ language }) => {
 
 
     return (
-        <section id="contact" className="md:h-screen w-screen snap-start bg-contact rounded-t-[70px] sm:rounded-t-[100px] text-white">
+        <section id="contact" className="md:h-screen md:min-h-[550px] w-screen snap-start bg-contact rounded-t-[70px] sm:rounded-t-[100px] text-white">
             <div className="flex justify-center">
                 <h2 className="relative mt-4 md:mt-11 text-xl text-center font-title p-4 underline underline-offset-8 decoration-4 decoration-white">
                     {title[language as keyof SectionContent]}
                 </h2>
             </div>
-            <div className="flex justify-center flex-col md:flex-row md:gap-6 items-center md:items-end md:h-[60vh] mx-4 mt-5 pb-12">
+            <div className="flex justify-center flex-col md:flex-row md:gap-6 items-center md:items-end md:h-[60vh] md:min-h-[300px] mx-4 mt-5 pb-12">
                 <div className="md:w-80 md:mb-7">
                     <h3 className="text-xl my-4">
                         {title2[language as keyof SectionContent]}

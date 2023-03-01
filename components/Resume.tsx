@@ -45,7 +45,7 @@ const Resume: React.FC<ResumeProps> = ({ language }) => {
     ];
 
     return (
-        <section id="resume" className="md:h-screen w-screen snap-start relative z-10 bg-resume bg-left-bottom sm:bg-[url('/resume/resume-bg.png')] sm:bg-cover">
+        <section id="resume" className="md:h-screen md:min-h-[550px] w-screen snap-start relative z-10 bg-resume bg-left-bottom sm:bg-[url('/resume/resume-bg.png')] sm:bg-cover">
             <div className="flex justify-center items-center">
                 <h2 className="
             relative mt-4 md:mt-11 text-xl text-center font-title p-4 relative

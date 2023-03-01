@@ -51,7 +51,7 @@ const Skills: React.FC<SkillsProps> = ({ language }) => {
     ]
 
     return (
-        <section id="skills" className="md:h-screen w-screen snap-start bg-skills relative z-10">
+        <section id="skills" className="md:h-screen sm:min-h-[500px] w-screen snap-start bg-skills relative z-10">
             <div className="flex justify-center items-center">
                 <h2 className="relative mt-4 md:mt-11 text-xl text-center font-title p-4 underline underline-offset-8 decoration-4 decoration-white">
                     {title[language as keyof TitleContent]}

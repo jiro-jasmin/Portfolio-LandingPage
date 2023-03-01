@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useEffect } from "react";
 import Button from "./ui/Button";
 
 type Language = 'jp' | 'en';
@@ -73,7 +74,7 @@ const HomeSection: React.FC<HomeSectionProps> = ({ language }) => {
                 alt="Picture of me"
                 width={550}
                 height={550}
-                className="px-2 sm:absolute sm:z-[-1] sm:-bottom-0 sm:px-12 md:px-0"
+                className="px-2 sm:absolute sm:z-[-1] sm:px-12 md:px-0 sm:-bottom-0"
             />
 
             <div className="px-10 w-full mb-4 sm:flex sm:justify-center sm:absolute sm:top-[480px] md:static md:w-auto md:self-start md:px-4 md:order-last">

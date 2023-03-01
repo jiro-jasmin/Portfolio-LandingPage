@@ -269,7 +269,7 @@ const Projects: React.FC<ProjectsProps> = ({ language }) => {
     ];
 
     return (
-        <section id="projects" className={`${!viewAll ? "min-[1032px]:h-screen" : ""} w-screen snap-start`}>
+        <section id="projects" className={`${!viewAll ? "min-[1032px]:h-screen md:min-h-[550px]" : ""} w-screen snap-start`}>
             <div className="flex justify-center items-center">
                 <h2 className={`
             relative mt-4 md:mt-11 text-xl text-center font-title p-4 relative
