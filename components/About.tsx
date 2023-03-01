@@ -43,8 +43,8 @@ const About: React.FC<AboutProps> = ({ language }) => {
         採用頂けた後には、精一杯努めて参りますので、
         ご検討のほど何卒よろしくお願い申し上げます。`,
         en: `Hi 👋 I am Florian J. Giraud.
-        I am a French junior web developer currently looking for a front-end developer position in an international company!
-        At the moment I am living in France but I am open to start working abroad 🌍 
+        I am a French junior web developer currently looking for a front-end developer position in an international environment!
+        At the moment I am living in southern France but I am open to relocate 🌍 
         My background in Japanese studies and work experience in Japan has allowed me to be familiar with diverse teams using Japanese🇯🇵, English🇬🇧 and French🇫🇷 on a professional level. 
         I can quickly adapt to change and I love learning new things everyday!`,
     };
